@@ -10,10 +10,10 @@ import java.io.*;
          DataInputStream dis=new DataInputStream(s.getInputStream());
           
          int num = dis.readInt();
-         int sq =num*num;
+         int ans =num*num;
          DataOutputStream dos=new DataOutputStream(s.getOutputStream());
 
-         dos.writeInt(sq);
+         dos.writeInt(ans);
          dos.flush();
          s.close();
          dis.close();

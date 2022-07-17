@@ -1,6 +1,6 @@
 import java.net.*;
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
 class client{
 public static void main(String[] args) {
     try{
@@ -14,7 +14,7 @@ public static void main(String[] args) {
            DataInputStream dis=new DataInputStream(S.getInputStream());
            int ans=dis.readInt();
            System.out.print("The Square is="+ans);
-           scan.close();
+           
            dis.close();
            dos.close();
            S.close();
